@@ -23,6 +23,8 @@ const userModel=new mongoose.Schema({
         enum:["male","female","others"],
         required:true
     }
+},{
+    timestamps:true
 })
 
 export const User=mongoose.model("User",userModel);
